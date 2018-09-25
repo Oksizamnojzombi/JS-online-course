@@ -29,10 +29,8 @@ console.log(string.substring(5, 10));
 console.log( string.slice(0, -6));
 
 // 8. Получить переменную string с текстом "2016"
-
 let a = 20;
 let b = 16;
 
 string = a.toString() + b.toString();
-
 console.log("string", string);
