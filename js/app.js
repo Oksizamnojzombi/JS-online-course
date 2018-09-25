@@ -32,5 +32,46 @@ console.log( string.slice(0, -6));
 let a = 20;
 let b = 16;
 
-string = a.toString() + b.toString();
+string = a.toString() + b + '';
 console.log("string", string);
+
+// Number. Tasks.
+
+// 1. Число Pi из Math и округлить до 2х знаков после точки
+let pi = Math.PI;
+console.log("Pi", +pi.toFixed(2));
+
+// 2. Максимальное и минимальное значения из представленного ряда
+let max = Math.max(15, 11, 16, 12, 51, 12, 13, 51);
+let min = Math.min(15, 11, 16, 12, 51, 12, 13, 51);
+
+console.log("max ->", max, "min ->", min);
+
+// 3. Рфбота с Math.random
+//a.
+let random = Math.random();
+console.log(+random.toFixed(2));
+
+//b. где Х это одна цыфра?
+console.log(Math.round(random * 10));
+
+// 4. Проверка результата вычисления 0,6+0,7 - как привести к нормальному виду (1,3)
+a = 0.6;
+b = 0.7;
+
+let sum = a + b;
+console.log(sum);
+
+// приводим к нормальному виду
+let normal_sum = +sum.toFixed(1);
+console.log(normal_sum);
+
+normal_sum = Math.round(sum * 10) / 10;
+console.log(normal_sum);
+
+// 5. Получить число из строки '100$'
+string = '100$';
+console.log(string);
+
+let new_string = parseInt(string);
+console.log(new_string);
