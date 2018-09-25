@@ -63,15 +63,15 @@ let sum = a + b;
 console.log(sum);
 
 // приводим к нормальному виду
-let normal_sum = +sum.toFixed(1);
-console.log(normal_sum);
+let normalSum = +sum.toFixed(1);
+console.log(normalSum);
 
-normal_sum = Math.round(sum * 10) / 10;
-console.log(normal_sum);
+normalSum = Math.round(sum * 10) / 10;
+console.log(normalSum);
 
 // 5. Получить число из строки '100$'
 string = '100$';
 console.log(string);
 
-let new_string = parseInt(string);
-console.log(new_string);
+let newString = parseInt(string);
+console.log(newString);
