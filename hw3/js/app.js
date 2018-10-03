@@ -21,3 +21,21 @@ for (let i = string2.length - 1; i >= 0; i--) { // никак не придум�
 }
 
 console.log(s);
+
+// 3.
+
+
+let n = 10;
+// for (let i = 1; i < 10; i++) {
+//     n = n * i;
+// }
+let i = 1;
+while (i < 10) {
+    n *= i;
+    i++;
+}
+
+console.log(n);
+
+// 5.
+
