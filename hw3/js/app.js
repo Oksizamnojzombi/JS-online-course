@@ -10,7 +10,6 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 arr = arr.join(' ');
-console.log(arr);
 
 // 2.
 let string2 = 'tseb eht ma i';
@@ -20,22 +19,34 @@ for (let i = string2.length - 1; i >= 0; i--) { // никак не придум�
     s += string2[i];
 }
 
-console.log(s);
-
 // 3.
-
-
 let n = 10;
+let i;
 // for (let i = 1; i < 10; i++) {
 //     n = n * i;
 // }
-let i = 1;
+i = 1;
 while (i < 10) {
     n *= i;
     i++;
 }
 
-console.log(n);
-
 // 5.
+let str = 'JavaScript is a pretty good language';
+let oneMoreArr = str.split(' ');
 
+i = 0;
+while (i < oneMoreArr.length) {
+    oneMoreArr[i] = oneMoreArr[i][0].toUpperCase() + oneMoreArr[i].slice(1);
+    i++;
+}
+
+oneMoreArr = oneMoreArr.join('');
+
+// 6.
+
+for (let i = 1; i < 15; i++) {
+    if( i % 2 !== 0) {
+        console.log(i);
+    }
+}
