@@ -95,7 +95,6 @@ function changeCollection() {
         arguments[i].shift();
         arrayFromArrays.push(arguments[i]);
     }
-    console.log(arguments);
     return arrayFromArrays;
 }
 
