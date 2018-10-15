@@ -143,4 +143,3 @@ function filterProducts(arr, min, max) {
 }
 
 filterProducts(products, 10, 20);
-console.log(filterProducts(products, 10, 20));
