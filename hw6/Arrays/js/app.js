@@ -1,4 +1,4 @@
-// Home work
+// Home work 6
 // Arrays
 
 // 1.
