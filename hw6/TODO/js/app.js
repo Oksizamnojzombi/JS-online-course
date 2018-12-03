@@ -17,6 +17,7 @@ let storage = {
     deleted_todos: []
 };
 
+
 /**
  * generate_id - создает произвольную строку 
  * @returns {string} - новый id
@@ -32,6 +33,7 @@ const generate_id = () => {
 
     return id;
 }
+// Альтернативный метод: создать масив из индексов знаков строки, и отфильтровать масив полученый из строк по этим индексам
 
 /**
  * add_new_todo - функция для добавления новой задачи
@@ -51,9 +53,9 @@ const add_new_todo = (title, text) => {
 }
 
 /**
- * delete_todo_item - удаление одной задачи
- * @param {sting} id 
- */
+* delete_todo_item - удаление одной задачи
+* @param {sting} id 
+*/
 const delete_todo_item = id => {
     if (!id) return console.log("Передайте id удаляемой задачи.");
 
@@ -69,5 +71,14 @@ const delete_todo_item = id => {
  * @param {*} text 
  */
 const edit_todo_item = (id, title, text) => {
+    if (!id) return console.log("Передайте id изменяемой задачи.");
+    if (!title) return console.log("Введите новый заголовок задачи.");
+    if (!text) return console.log("Введите новый текст задачи.");
 
+    let changingToDo = storage.current_todos.some(todo => todo.id === id);
+
+    changingToDo = { title, text, id };
+    storage.current_todos = storage.current_todos.filter(todo => todo.id !== id);
+    storage.current_todos.push(changingToDo);
+    return storage.current_todos;
 }
