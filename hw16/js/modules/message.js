@@ -7,7 +7,7 @@ class Message {
         this._setContainer();
     }
 
-    show({text, error}) {
+    show({ text, error }) {
         const template = Message._createMessageTemplate(text, error);
         this._messageContainer.insertAdjacentHTML("afterbegin", template);
     }
