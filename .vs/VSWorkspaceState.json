@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hw16\\css",
-    "\\hw16\\js\\ui",
-    "\\hw21-typeScript",
-    "\\hw21-typeScript\\src"
+    "\\hw21-typeScript\\build",
+    "\\hw21-typeScript\\src",
+    "\\social-app"
   ],
-  "SelectedNode": "\\hw21-typeScript\\src",
   "PreviewInSolutionExplorer": false
 }
