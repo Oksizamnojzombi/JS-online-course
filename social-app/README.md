@@ -1,2 +1,2 @@
-# Angular-course
-Angular JS 6 
+# JS-course
+Test social app with uploading photos
