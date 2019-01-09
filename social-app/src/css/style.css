@@ -86,12 +86,12 @@ img {
     min-width: 300px;
     max-width: 1000px;
     padding: 20px;
-    background-color: #7303c0;
+    background-color: #8798AF;
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
     z-index: 1;
-    color: #fff;
+    color: #000;
     opacity: 1;
     visibility: visible;
     transition: ease-in-out .3s;
