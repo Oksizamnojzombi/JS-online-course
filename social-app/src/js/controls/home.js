@@ -108,7 +108,7 @@ export function HomePage() {
             const imgSrc = e.target.offsetParent.previousElementSibling;
             const imgWrap = e.target.offsetParent.previousElementSibling.parentElement;
 
-            let questionDelete = confirm('�� ����� ������ ������� ��� ���� ?');
+            let questionDelete = confirm('Are you sure?');
 
             if (questionDelete) {
                 // elements imgID - id photo, imgUrl - url photo
@@ -146,7 +146,7 @@ export function HomePage() {
      */
     function deleteComment(e) {
         if (e.target.closest(".fa-trash-alt")) {
-            let commentDelete = confirm('������� ���������� ?');
+            let commentDelete = confirm('Are you sure you want to delete the comment?');
             if (commentDelete) {
                 const idImg = e.target.parentElement.dataset.imgId;
                 const idComments = e.target.parentElement.dataset.commentid;

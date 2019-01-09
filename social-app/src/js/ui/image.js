@@ -3,30 +3,16 @@ export class ImageUI {
         this._imagesContainer = document.querySelector(".images-wrap .row");
     }
 
-    /**
-     * addImage - Add image to page
-     * @param {file} image
-     */
     addImage(image) {
         console.log(image);
         const template = ImageUI._createImageTemplate(image);
         this._imagesContainer.insertAdjacentHTML("afterbegin", template);
     }
 
-    /**
-     * clearContainer - Cleaning the container from img
-     */
     clearContainer() {
         this._imagesContainer.innerHTML = "";
     }
 
-    /**
-     * _createImageTemplate - Display a custom block to insert an image
-     * @param  url - image link
-     * @param  views - number of views
-     * @param  likes - number of positive ratings for a photo
-     * @param  _id - id
-     */
     static _createImageTemplate({url, views, likes, _id}) {
         return `
         <div class="col-4 col">
