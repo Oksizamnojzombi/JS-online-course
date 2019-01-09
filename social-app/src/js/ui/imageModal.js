@@ -18,7 +18,7 @@ export class ImageModal {
     }
 
     setNewComments(comments) {
-        this.clearComent();
+        this.clearComment();
         this.setComments(comments);
     }
 

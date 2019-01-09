@@ -45,7 +45,7 @@ export function HomePage() {
     const formSeach = document.forms["searchForm"];
     const inputSearch = formSeach.elements["search"];
     const searchWraper = document.querySelector(".search-result");
-    const logButton = document.querySelector(".btn-outline-danger");
+    const logButton = document.querySelector(".logout-btn");
 
 
     /**
@@ -209,10 +209,10 @@ export function HomePage() {
     }
 
     /**
-     * logautSistem - function for logout
+     * logoutSistem - function for logout
      * @param {e}
      */
-    function logautSistem(e) {
+    function logoutSistem(e) {
         localStorage.clear();
         window.location = "login.html";
     }
@@ -245,5 +245,5 @@ export function HomePage() {
     addComments.addEventListener("submit", addComment);
     commentWraper.addEventListener("click", deleteComment);
     formSeach.addEventListener("submit", searchHandler);
-    logButton.addEventListener("click", logautSistem);
+    logButton.addEventListener("click", logoutSistem);
 }
